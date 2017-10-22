@@ -15,7 +15,7 @@ function RandomString($length) {
  
 if(isset($_POST['secret']))
 {
-    if(in_array($_POST['secret'], $keys))
+    if(in_array($_POST['secret'], $tokens))
     {
         $filename = RandomString($lengthofstring);
         $target_file = $_FILES["sharex"]["name"];
