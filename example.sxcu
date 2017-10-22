@@ -1,0 +1,12 @@
+﻿{
+  "Name": "YOUR_SERVICE_NAME_HERE",
+  "DestinationType": "ImageUploader, TextUploader, FileUploader",
+  "RequestType": "POST",
+  "RequestURL": "http://yourdomain.com/upload.php",
+  "FileFormName": "sharex",
+  "Arguments": {
+    "secret": "YOUR_KEY_HERE"
+  },
+  "ResponseType": "Text",
+  "URL": "http://yourdomain.com/i/$json:url$"
+}
