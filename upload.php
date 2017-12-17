@@ -1,9 +1,8 @@
 <?php
 $tokens = array("token1", "token2");
  
-$sharexdir = "i/"; //This is your file dir, also the link..
-$lengthofstring = 5; //Length of the file name
-
+$sharexdir = "i/";
+$lengthofstring = 5;
 function RandomString($length) {
     $keys = array_merge(range(0,9), range('a', 'z'));
  
