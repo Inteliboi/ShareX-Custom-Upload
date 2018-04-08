@@ -2,6 +2,7 @@
 
 ## Features
 - Based in PHP! Run it on your cPanel!
+- Made by the one and only Intel#3981 on Discord
 
 ## Install
 1. Upload `upload.php` to your web server.
