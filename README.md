@@ -1,4 +1,4 @@
-# A PHP-based ShareX Compatable file storage system
+# A PHP-based ShareX Compatible file storage system
 
 ## Features
 - Based in PHP! Run it on your cPanel!
