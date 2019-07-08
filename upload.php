@@ -1,6 +1,6 @@
 <?php
+error_reporting(E_ERROR);
 $tokens = array("token1", "token2"); //Tokens go here
- 
 $sharexdir = "i/"; //File directory
 $lengthofstring = 5; //Length of file name
 
