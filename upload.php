@@ -1,4 +1,5 @@
 <?php
+header('Content-type:application/json;charset=utf-8');
 error_reporting(E_ERROR);
 $tokens = array("token1", "token2"); //Tokens go here
 $sharexdir = "i/"; //File directory
@@ -29,26 +30,24 @@ if(isset($_POST['secret']))
         if (move_uploaded_file($_FILES["sharex"]["tmp_name"], $sharexdir.$filename.'.'.$fileType))
         {
             //Sends info to client
-            $json->status = "OK";
-            $json->errormsg = "";
-            $json->url = $filename . '.' . $fileType;
+            $json = ['status' => 'OK','errormsg' => '','url' => $filename . '.' . $fileType];
         }
             else
         {
             //Warning
-           echo 'File upload failed - CHMOD/Folder doesn\'t exist?';
+           $json = ['status' => 'ERROR','errormsg' => '','url' => 'File upload failed. Does the folder exist and did you CHMOD the folder?'];
         }  
     }
     else
     {
         //Invalid key
-        echo 'Invalid Secret Key';
+        $json = ['status' => 'ERROR','errormsg' => '','url' => 'Invalid secret key.'];
     }
 }
 else
 {
     //Warning if no uploaded data
-    echo 'No post data recieved';
+    $json = ['status' => 'ERROR','errormsg' => '','url' => 'No POST data recieved.'];
 }
 //Sends json
 echo(json_encode($json));
