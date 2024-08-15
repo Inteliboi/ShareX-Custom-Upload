@@ -2,7 +2,6 @@
 
 ## Features
 - Based in PHP! Run it on your cPanel!
-- Made by the one and only `memex#3981` on Discord
 
 ## Install
 1. Upload `upload.php` to your web server and chmod to `777`.
@@ -21,7 +20,3 @@
 1. Open `example.sxcu` with a text editor.
 2. Change `YOUR_KEY_HERE` to to your key.
 3. Change `http://yourdomain.com/upload.php` and `http://yourdomain.com/i/$json:url$` to your domain.
-
-## Support
-Contact `memex#3981` on Discord. Ask me nicely for help with this and be patient.
-Please don't spam me!
